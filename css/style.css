@@ -16,23 +16,22 @@ body {
 }
 
 .logo {
-  margin:  0 auto;
   display: block;
+  margin: 0 auto;
   width: 100px;
 }
+
 h1 {
   font-size: 25px;
   margin-bottom: 15px;
 }
 
-/*.background-image {*/
-/*  background-size: cover;*/
-/*}*/
 .login-container {
   position: absolute;
   top: 0;
   width: 80%;
   max-width: 400px;
+  min-width: 400px;
   background-color: rgba(255, 255, 255, 0.7);
   padding: 30px 20px;
   transform: translateY(50%);
@@ -47,14 +46,13 @@ h1 {
 
 }
 
-.login-container .wrap .input-box {
+.login-container .form .input-box {
   width: 100%;
-  height: 30px;
   margin: 30px 0;
 
 }
 
-.login-container .input-box input {
+.login-container .form .input-box input {
   width: 100%;
   height: 20px;
   border-radius: 5px;
@@ -62,34 +60,52 @@ h1 {
   border: none;
 }
 
-.login-container .input-box input[type="text"] {
+.login-container .form .input-box input[type="text"] {
   padding: 20px 10px;
   line-height: 28px;
   background: #ddd;
 }
 
-.login-container .input-box input[type="password"] {
+.login-container .form .input-box input[type="password"] {
   padding: 20px 10px;
   line-height: 28px;
   background: #ddd;
 }
 
-.login-container .help-btn {
+.login-container .form .input-box img {
+  position: absolute;
+  bottom: 25%;
+  right: 10px;
+  transform: translateY(-200%);
+  width: 15px;
+  height: auto;
+  cursor: pointer;
+}
+/* Button */
+.login-container .form .help-btn {
   display: flex;
   justify-content: end;
   margin-bottom: 15px;
-  overflow: hidden;
-  font-size: 12px;
+  font-size: 13px;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
-.login-container .help-btn a:hover {
+
+.login-container .form .help-btn a:hover {
   opacity: 0.8;
 }
-.login-container .btn {
+
+.login-container .form .btn {
   display: block;
+  font-size: 15px;
   width: 100%;
   border-radius: 20px;
   border: none;
   padding: 15px;
   background-color: red;
   color: white;
+}
+
+.login-container .btn:hover {
+  background-color: #e60000;
 }
